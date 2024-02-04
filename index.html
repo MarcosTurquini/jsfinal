@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OhGamers</title>
+    <script
+      src="https://kit.fontawesome.com/fb00d901ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <nav id="container" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><div id="shopName" class="logo"><b>Oh</b>Gamers</div></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+          <div
+            data-cart-target=".cartMainContainer"
+            class="d-flex mx-lg-2 mx-sm-0 button align-items-center justify-content-center cartBtn"
+          >
+            <div
+              class="text-body d-flex align-items-center justify-content-center position-relative mx-3"
+            >
+              <i class="fa-solid fa-cart-shopping fs-2 p-0"></i>
+              <span
+                id="badge"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="container-fluid my-2 bg-trasparent section"
+        style="position: relative"
+      >
+        <h1>MousePad Personalizados</h1>
+        <div
+          id="containerData"
+          class="row row-cols-1 row-cols-xs-2 row-cols-sm-3 row-cols-lg-5 g-3"
+        ></div>
+      </section>
+
+    <div class="cartMainContainer">
+      <div class="cartHead">
+        <h3 id="totalItem">Total Items: 0</h3>
+        <h3 id="totalPrice">Total Price: 0</h3>
+        <div data-close-button class="button fs-2">&times;</div>
+      </div>
+      <div id="cartContainer" class="cartContainer"></div>
+    </div>
+    <div class="" id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+</html>
